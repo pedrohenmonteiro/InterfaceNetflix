@@ -1,0 +1,171 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --vermelho: #d40b15;
+    --preta: #141414;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+
+body {
+    background: var(--preta);
+    font-family: Arial, Times, serif;
+    color: white;
+} 
+
+.logo {
+    color: var(--vermelho);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #FFF
+}
+
+/* Filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(90deg, rgba(20,20,20,0.98) 15%, rgba(20,20,20,0.9) 40%, rgba(128, 89, 89, 0.5) 100%), url(/img/principal.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.descricao {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.titulo-imagem {
+    background-image: url(/img/logo.png);
+    background-size: 100%;
+    width: 35%;
+    min-width: 200px;
+    height: 150px;
+  background-repeat: no-repeat;    
+}
+
+ .titulo-imagem:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+
+
+.botao {
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.botao:hover {
+    background-color: rgba(255,255,255, 0.95);
+    color: rgba(0, 0, 0, 0.95);
+    
+
+    }
+
+    
+
+    .botao i{
+        position: relative;
+        right: 15px;
+    
+    }
+    
+    .container{
+        margin-left: 20px;
+    }
+
+   .descricao {
+     width: 80%;
+     text-align:justify;
+   }
+   
+   .box-filme {
+    height: 100%;
+    width: 100%;
+       display: block;
+       cursor: pointer;
+   }
+
+   .carrosel-filmes {
+       margin-top: 5px;
+   }
+   
+
+
+
+   @media screen and (max-width: 700px) {
+header .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-imagem {
+    height: 115px;
+}
+
+.botao{
+    margin-top: 5px;
+}
+
+#elemento{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+   }
+
+
+   @media screen and (max-width: 316px) {
+.container {
+    margin-left: 5%;
+    
+}
+
+.botao {
+    margin-left: 5%;
+}
+   }
+       
+
+
+   
