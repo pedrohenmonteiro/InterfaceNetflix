@@ -52,7 +52,7 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(90deg, rgba(20,20,20,0.98) 15%, rgba(20,20,20,0.9) 40%, rgba(128, 89, 89, 0.5) 100%), url(../img/principal.jpg);
+    background: linear-gradient(90deg, rgba(20,20,20,0.98) 15%, rgba(20,20,20,0.9) 40%, rgba(128, 89, 89, 0.5) 100%), url(img/principal.jpg);
     height: 400px;
     background-size: cover;
     display: flex;
@@ -68,7 +68,7 @@ header nav a:hover {
 }
 
 .titulo-imagem {
-    background-image: url(../img/logo.png);
+    background-image: url(img/logo.png);
     background-size: 100%;
     width: 35%;
     min-width: 200px;
